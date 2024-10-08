@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coin Tracker Demo</title>
+  <link rel="stylesheet" href="coin.css">
+</head>
+<body>
+  
+  
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search by name">
+    <button onclick="searchData()">Search</button>
+    <button onclick="sortByMarketCap()">Sort By Mkt Cap</button>
+    <button onclick="sortByPercentage()">Sort by percentage</button>
+  </div>
+
+  <!-- Table to display the coin data -->
+  <table>
+    <thead>
+      <tr>
+        <!-- <th>ID</th>
+        <th>Name</th>
+        <th>Symbol</th>
+        <th>Image</th>
+        <th>Price</th>
+        <th>Total Volume</th>
+        <th>24h % Change</th>
+        <th>Market Cap</th> -->
+      </tr>
+    </thead>
+    <tbody id="coinTable">
+      <!-- Data will be inserted here dynamically -->
+    </tbody>
+  </table>
+
+  <script src="coin.js"></script>
+</body>
+</html>
